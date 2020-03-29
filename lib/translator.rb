@@ -21,8 +21,9 @@ def get_japanese_emoticon (emoticon, value)
   library = load_library(emoticon)
   
   result = library[:get_emoticon][value]
+  
   if result == nil 
-    result "Sorry, that emoticon was not found"
+    result = "Sorry, that emoticon was not found"
   end
   result
 end
