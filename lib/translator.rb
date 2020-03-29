@@ -23,7 +23,7 @@ def get_japanese_emoticon (emoticon, value)
   labrary[:get_emoticon].each do |english, japanese|
     
     if english == value 
-      english
+      japanese
     else
       "Sorry, that emoticon was not found"
     end
