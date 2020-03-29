@@ -17,7 +17,7 @@ def load_library(emoticon)
 end
 
 def get_japanese_emoticon (emoticon, value)
-  
+  binding.pry
   library = load_library(emoticon)
     if labrary[:get_emoticon]include? (value) 
       labrary[:get_emoticon][value]
