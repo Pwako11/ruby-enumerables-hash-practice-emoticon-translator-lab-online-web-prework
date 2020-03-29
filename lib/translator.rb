@@ -19,10 +19,7 @@ end
 def get_japanese_emoticon (emoticon, value)
   
   library = load_library(emoticon)
-  
-  
-    
-    if labrary[:get_emoticon]include? value 
+    if labrary[:get_emoticon]include? (value) 
       labrary[:get_emoticon][value]
     else
       "Sorry, that emoticon was not found"
