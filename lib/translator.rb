@@ -33,5 +33,8 @@ def get_english_meaning(emoticon, value)
   library = load_library(emoticon)
   result = library[:get_meaning][value]
   
-  # code goes here
+  if result == nil 
+    result = "Sorry, that emoticon was not found"
+  end
+  result 
 end
